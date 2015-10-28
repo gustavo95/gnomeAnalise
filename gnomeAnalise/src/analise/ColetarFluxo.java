@@ -125,4 +125,32 @@ public class ColetarFluxo {
         return patchDiff;
 	}
 	
+	public String getFile(String patch){
+		String file = "";
+		
+		Pattern pattern = Pattern.compile("(\\+\\+\\+ .*\\.c)");
+		
+		Matcher matcher = pattern.matcher(patch);
+        if(matcher.find()) {
+        	String result = matcher.group();
+        	file = result.substring(4, result.length());
+        }
+		
+		return file;
+	}
+	
+	public ArrayList<String> getFunction(String patch){
+		ArrayList<String> function = new ArrayList<String>();
+		
+		Pattern pattern = Pattern.compile("(?<=\\s+@@).*?\\s*@@(.*?\\()");
+		
+		Matcher matcher = pattern.matcher(patch);
+        while(matcher.find()) {
+        	String result = matcher.group();
+        	function.add(result.substring(4, result.length()));
+        }
+		
+		return function;
+	}
+	
 }
