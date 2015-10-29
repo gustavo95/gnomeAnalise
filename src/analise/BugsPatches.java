@@ -27,7 +27,6 @@ public class BugsPatches {
         for (int i = 0; i < ele.size(); i++) {     	
         	bugs.add(ele.get(i).getAllElements().get(0).text());
         }
-        
         return bugs;
 	}
 	
