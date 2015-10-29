@@ -18,10 +18,8 @@ public class BugsPatches {
 	
 	public ArrayList<String> getBugs() throws IOException{
 		ArrayList<String> bugs = new ArrayList<String>();
-		
 		Connection connection = Jsoup.connect("https://bugzilla.gnome.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&component=General&product=gnome-software");
 		Document doc = connection.get();
-
         Elements ele = doc.getElementsByClass("bz_bugitem");
         for (int i = 0; i < ele.size(); i++) {     	
         	bugs.add(ele.get(i).getAllElements().get(0).text());
