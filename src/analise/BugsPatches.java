@@ -14,8 +14,7 @@ import org.jsoup.select.Elements;
 //Gnome History
 public class BugsPatches {
 	
-	public BugsPatches(){
-	}
+	public BugsPatches(){}
 	
 	public ArrayList<String> getBugs() throws IOException{
 		ArrayList<String> bugs = new ArrayList<String>();
