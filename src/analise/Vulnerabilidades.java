@@ -14,7 +14,6 @@ public class Vulnerabilidades {
     public Vulnerabilidades() throws Exception {
     	temp = new ArrayList<>();
     	getCVE("https://www.cvedetails.com/vulnerability-list/vendor_id-283/product_id-14792/Gnome-Gnome.html");
- 
     }
     
     public ArrayList<String> getTemp() {
