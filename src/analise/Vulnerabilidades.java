@@ -1,11 +1,11 @@
 package analise;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 //gnome
 public class Vulnerabilidades {
@@ -13,7 +13,6 @@ public class Vulnerabilidades {
 
     public Vulnerabilidades() throws Exception {
     	temp = new ArrayList<>();
-        
     	getCVE("https://www.cvedetails.com/vulnerability-list/vendor_id-283/product_id-14792/Gnome-Gnome.html");
  
     }
