@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-//Gnome
+//Gnome History
 public class BugsPatches {
 	
 	public BugsPatches(){
