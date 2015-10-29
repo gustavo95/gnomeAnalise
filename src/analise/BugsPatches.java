@@ -23,7 +23,6 @@ public class BugsPatches {
 		Document doc = connection.get();
 
         Elements ele = doc.getElementsByClass("bz_bugitem");
-        
         for (int i = 0; i < ele.size(); i++) {     	
         	bugs.add(ele.get(i).getAllElements().get(0).text());
         }
