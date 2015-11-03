@@ -1,8 +1,0 @@
-
-.idea/
-.settings/
-.classpath
-*.jar
-*.class
-/bin/
-/target/
