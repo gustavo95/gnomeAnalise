@@ -1,4 +1,4 @@
-package analise;
+package br.ic.ufal.easy.analise;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -76,7 +76,7 @@ public class LogsDiffs {
 			result = String.format("Falha ao executar comando %s. Erro: %s", commandLine, e.toString());  
 		}  
 
-		// Se não executou com sucesso, lança a falha  
+		// Se nï¿½o executou com sucesso, lanï¿½a a falha  
 		if (!success) {  
 			throw new IOException(result);  
 		}  

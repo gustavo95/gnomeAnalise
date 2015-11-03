@@ -1,4 +1,4 @@
-package analise;
+package br.ic.ufal.easy.analise;
 
 import java.util.ArrayList;
 
