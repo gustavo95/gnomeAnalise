@@ -1,6 +1,7 @@
 package br.ic.ufal.easy.analise;
 
 
+
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
